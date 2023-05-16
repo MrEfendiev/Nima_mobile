@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import EmailConfirmation from './assets/components/Auth/ EmailConfirmation';
+import PasswordReset from './assets/components/Auth/ PasswordReset';
+import PasswordResetOtp from './assets/components/Auth/ PasswordResetOtp';
+import Auth from './assets/components/Auth/Auth';
+import NewPassword from './assets/components/Auth/NewPassword';
+import Registration from './assets/components/Auth/Registration';
+import Greetings from './assets/components/Greetings/Greetings';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='Container'>
+        <Routes> 
+            <Route path="/" element={<Greetings/>}/>
+            <Route path="/Auth" element={<Auth/>}/>
+            <Route path="/Registration" element={<Registration/>}/>
+            <Route path="/EmailConfirmation" element={<EmailConfirmation/>}/>
+            <Route path="/PasswordReset" element={<PasswordReset/>}/>
+            <Route path="/PasswordResetOtp" element={<PasswordResetOtp/>}/>
+            <Route path="/NewPassword" element={<NewPassword/>}/>
+        </Routes>
+      </div>
     </div>
   );
 }

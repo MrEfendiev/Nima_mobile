@@ -1,38 +1,707 @@
-.App {
-  text-align: center;
+
+body
+{
+  background-color: #13131B;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+@font-face
+{
+  font-family: 'Ubuntu';
+  src: url('./assets/fonts/Montserrat/static/Montserrat-Bold.ttf');
+}
+@font-face
+{
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter/static/Inter-Medium.ttf');
+}
+p 
+{
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1
+{
+  font-family: 'Ubuntu';
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container
+{
+  position: relative;
+  max-width: 350px; 
+  margin: 0 auto; 
+  flex-wrap: wrap;
+}
+
+.Header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+/* Greetings........................................................................................................................... */
+
+.Greetings
+{
+ 
+}
+
+
+.Greetings__Images-flex
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Greetings__Images-block
+{
+  width: 80%;
+}
+.Greetings__Images
+{
+  left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Greetings__Images-One
+{
+  position: absolute;
+  width: 234.7px;
+  /* height: 206.02px; */
+  /* top: 60px; */
+  left: 20px;
+  z-index: 1;
+}
+
+.Greetings__Images-Two
+{
+  position: relative;
+  width: 265.79px;
+  height: 251.84px;
+ 
+  left: 60px;
+  top: -130px;
+  z-index: 3;
+}
+.Greetings__Images-Three
+{
+  position: relative;
+  /* top: 60px; */
+  left: 40px;
+  width: 299.96px;
+  height: 224.97px;
+  z-index: 2;
+}
+
+.Greetings__container
+{
+   position: relative;
+   top: -180px;
+   max-width: 340px; 
+   margin: 0 auto; 
+   flex-wrap: wrap;
+}
+.Greetings__title h1 
+{
+  color: #fff;
+  width: 299px;
+  height: 184px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 125%;
+}
+
+
+.Greetings__title p 
+{
+  /* font-family: 'Ubuntu'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  
+  display: flex;
+  align-items: center;
+
+  color: #88888D;
+}
+
+
+
+.Greetings__buttons
+{
+  margin-top: 54px;
+}
+
+.Greetings__buttons p 
+{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+}
+
+.Greetings__buttonOne
+{
+  width: 327px;                   
+  height: 52px;         
+  text-decoration: none;
+  background: #FF3838;                      
+  border-radius: 10px;                                 
+  display: flex;                                      
+  flex-direction: row;                        
+  justify-content: center;                  
+  align-items: center;                    
+}
+
+
+.Greetings__buttonTwo
+{
+  width: 327px;
+  height: 52px;
+  text-decoration: none;
+  background: #22222E;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.Greetings__height
+{
+  /* height: 60px; */
+}
+
+
+
+/* Registration........................................................................................................................................ */
+
+
+.Registration-header-text p 
+{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.Registration
+{
+  margin-top: 20px;
+}
+
+.Registration-header__arrow
+{
+  background-image: url('./assets/icons/Arrows/Vector.svg');
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 12px;
+}
+
+
+.Registration__form
+{
+  
+}
+
+.Registration-form__input-block
+{
+  position: relative;
+  margin-top: 31px;
+}
+
+.Registration-form__input-block input
+{
+  width: 343px;
+  height: 48px;
+  background: #22222E;
+  border-radius: 12px;
+  border: none;
+  padding-left: 10px;
+  color: #ffff;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  outline: none;
+ 
+}
+
+
+
+.Registration-form__input-block input::placeholder
+{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #88888D;
+}
+
+
+.Registration-form__button:enabled
+{
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  width: 353px;
+  height: 52px;
+
+  background: #FF3838;
+  border-radius: 10px;
+}
+
+
+.Registration-form__button:disabled
+{
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  width: 353px;
+  height: 52px;
+
+  background: rgba(255, 56, 56, 0.5);
+  border-radius: 10px;
+}
+
+.input
+{
+  background-color: #13131B;
+  width: 200px;
+  height: 200px;
+}
+
+
+.Registration-form__images
+{
+  margin-top: 68px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Registration-form__images-flex
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.Registration-form__image-block
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: #22222E;
+  border-radius: 12px;
+}
+
+
+.Registration-form__text
+{
+  text-decoration: none;
+  margin-top: 32px;
+}
+
+.Registration-form__text span
+{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #88888D;
+}
+
+
+.Registration-form__text p 
+{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.Registration-form__text-Link
+{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Registration__height
+{
+  height: 50px;
+}
+
+
+.error
+{
+  color: red;
+}
+
+.error_icon
+{
+  background-image: url('./assets/components/Auth/images/menu/coolicon.svg');
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+}
+
+.err-icon__block
+{
+  position: absolute;
+  right: 0;
+  top: 47px;
+  background: #A40005;
+  border: 1.5px solid #A40005;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-error
+{
+  width: 200px;
+  height: 200px;
+  background: #22222E;
+  border-radius: 12px;
+}
+
+
+/* EmailConfirmation......................................................................................................................................... */
+
+
+
+
+.EmailConfirmation
+{
+  margin-top: 20px;
+}
+
+.EmailConfirmation__title
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  /* text-align: center; */
+  
+}
+
+
+.EmailConfirmation__title p 
+{
+  width: 327px;
+  height: 44px;
+  text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 135%;
+  color: #FFFFFF;
+}
+
+
+.EmailConfirmation-content__OtpInput-block
+{
+  width: 50px;
+  height: 50px;
+  background: #22222E;
+  border-radius: 12px;
+}
+
+.EmailConfirmation-content__OtpInput
+{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.EmailConfirmation-OTP__input
+{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: #22222E;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    border: none;
+    outline: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .EmailConfirmation__content-text
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 18px;
   }
+
+  .EmailConfirmation__content-text-Link
+  {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #88888D;
+  }
+
+
+  .EmailConfirmation-buttons__Confirm
+  {
+    text-decoration: none;
+    width: 353px;
+    height: 52px;
+
+    background: #FF3838;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .EmailConfirmation-buttons__Confirm p 
+  {
+    color: #FFFFFF;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .EmailConfirmation-buttons__ChangeEmail
+  {
+    width: 343px;
+    height: 52px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .EmailConfirmation-buttons__ChangeEmail p
+  {
+    color: #88888D;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+
+  .EmailConfirmation__height
+  {
+    height: 400px;
+  }
+
+
+
+  /* Auth.......................................................................................................................................*/
+
+  .Auth
+  {
+    margin-top: 20px;
+  }
+
+  .Auth__ForgotPassword
+  {
+    position: relative;
+    top: 12px;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #88888D;
+  }
+
+
+  .Auth__Button
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF3838;
+    border-radius: 10px;
+    width: 353px;
+    height: 52px;
+    margin-top: 32px;
+  }
+
+  /* .Auth__Button:disabled
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 56, 56, 0.5);
+    border-radius: 10px;
+    width: 343px;
+    height: 52px;
+  } */
+
+
+  /* PasswordReset........................................................................................................................ */
+
+  .PasswordReset
+  {
+    margin-top: 20px;
+  }
+  .PasswordReset__title p 
+  {
+    text-align: center;
+    margin-top: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135%;
+    color: #FFFFFF;
+  }
+
+
+  .PasswordReset__button
+  {
+    text-decoration: none;
+    margin-top: 452px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF3838;
+    border-radius: 10px;
+    width: 353px;
+    height: 52px;
+  }
+  
+  .PasswordReset__button
+  {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+  .PasswordReset__height
+  {
+    height: 50px;
+  }
+
+  /* .PasswordReset__flex
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 700px;
+  } */
+
+
+  /* PasswordResetOtp................................................................................................................. */
+
+  
+.PasswordResetOtp
+{
+  margin-top: 20px;
+}
+
+.PasswordResetOtp__height
+{
+  height: 50px;
+}
+
+/* NewPassword............................................................................................................................ */
+
+.NewPassword
+{
+  margin-top: 20px;
+}
+
+.NewPassword__button
+{
+  margin-top: 412px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 353px;
+  height: 52px;
+  background: #FF3838;
+  border-radius: 10px;
+}
+
+.NewPassword__button p 
+{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+
+.NewPassword__height
+{
+  height: 50px;
 }
